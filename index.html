@@ -6,15 +6,17 @@
      <meta charset="utf-8">
      <meta name="Description" content="Home">
      <meta name="keywords" content="Home-Html">
+     <link rel="stylesheet" href="style_css/index.css"/>
+     
   </head>
   <body>
-    <div style="background-color: aqua">
+    <div id="id1">
       <!-- Đây là nội dung sẽ được hiện thị ở website
     Cta chạy bằng Go live
     Code trên Vs code vs notePad cx được
     Brower : chorme, fixbox, edge 
     -->
-      <h1 style="color: blue">Hello</h1>
+      <h1  class="he1" >Hello</h1>
       <h2 style="color: rgb(22, 223, 0)">Hello</h2>
       <h3 style="color: #cccccc">Hello</h3>
       <h4>Hello</h4>
@@ -70,10 +72,10 @@
       </audio>
       <br />
       <audio controls muted loop autoplay src="audio/rumo-ao-sol-13162.mp3">
-        <br />
+       
       </audio>
-      <br />
-      <video controls>
+     
+      <video controls style="display: block;text-align: center;">
         <source src="video/luk.mp4" type="video/mp4" />
       </video>
       <!-- Video same audio -->
@@ -151,5 +153,17 @@
         <input type="submit">
         <input type="reset">
        </form>
+       <div id="d1" >
+        <h1 class="head1">H1</h1>
+       </div>
+       <div id="d2">
+        <h2 id="head2">Aa</h2>
+        <button onclick="change()">Clicl change</button>
+       </div>
+       <script>
+        const change = () => {
+          document.getElementById("head2").innerHTML ="Chang oked";
+        }
+       </script>
       </body>
 </html>

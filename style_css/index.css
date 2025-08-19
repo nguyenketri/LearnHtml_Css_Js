@@ -1,0 +1,74 @@
+
+*{
+    box-sizing:border-box;
+}
+#id1{
+    color: rgba(23, 0, 0,0.9);
+    text-align:center;
+    border: 1rem solid red;
+    background:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBXc2MY0WJhq8OoUhHo5o8iuLyaGvMSgqYEA&s');
+    background-size:cover;
+    background-repeat:no-repeat;
+    width: 500px;
+    height: 600px;
+    overflow: auto;
+    position:relative;
+    float: left;
+}
+h1{
+    font-size:20px;
+    /* font-weight:100; */
+    font-style: semi-bold;
+    font-family:Verdana;
+    text-align:center;
+    text-transform:capitalize;
+    text-decoration:underline;
+    border: 2px solid red;
+    margin: 20px 30px 0 30px;
+    padding:5px;
+}
+.he1{
+    background-color: antiquewhite;
+    position:sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    
+}
+/* Display: có 3 loại inline, block, inline-block */
+/* Có position: relative là mặc định cũng là cha
+   Khi thẻ cho dùng position: relative thì con dùng 
+   position: absolute sẽ theo cha nhưng khi scroll vẫn bị mất
+   +) Còn position : relative , con position: fixed 
+   sẽ giữ nguyên đầu nhưng theo viewpoint ko theo cha nữa
+   +) Position: relative, con position:sticky 
+   Con sẽ theo cha và scroll vẫn giữ nguyên
+   left, top ,right, bottom
+
+*/
+ #d1{
+    width: 500px;
+    background-color: red;
+    float: left;
+    position: relative;
+  
+ }
+ .head1{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    margin-top: 100px;
+    border-radius: 20px 0 20px 0;
+ }
+  #d2{
+    width: 500px;
+    background-color: red;
+    float: right;
+    line-height:100px;
+    text-align: center;
+    color:white;
+    font-size:20px;
+    font-style: italic;
+ }
